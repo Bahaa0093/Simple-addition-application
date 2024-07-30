@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.textfield{border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 30px;
+    margin: 10px;
+
+}
+
+
+</style>
+
+<title>Dynamic web site</title>
+</head>
+<body>
+<input id="my" placeholder="enter your First Namber" class="textfield" /> <br/> 
+<input id="your" placeholder="enter your Second Namber" 
+ class="textfield"  />
+<button onclick="add()" style="width: 30px;height: 20px;">+</button>
+<div id="result">
+</div>
+
+<script>
+
+function add(){
+  var  A=document.getElementById ('my').value;
+   var B=document.getElementById ('your').value;
+A=parseInt(A)
+B=parseInt(B)
+   var result=A+B;
+document.getElementById("result").innerHTML=result;
+}
+
+</script>
+
+</body>
+</html>
